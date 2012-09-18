@@ -1,6 +1,3 @@
-# Prefere usar o brew
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
 # My home bins
 if [ -d $HOME/bin ]; then
   export PATH=$HOME/bin:$PATH
@@ -9,10 +6,3 @@ fi
 # Loads RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
-# Prompt Help Functions
-# [[ -s "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
-
-# Bash Completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  source `brew --prefix`/etc/bash_completion.d/git-completion.bash
-fi

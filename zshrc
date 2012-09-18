@@ -41,3 +41,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Any shell config
 [[ -s "$DOTFILES/shell" ]] && source "$DOTFILES/shell"
+
+# OS-specific
+OS_FAMILY=`uname -s`
+OS_SPECIFIC=$OS_FAMILY:l
+[[ -s "$DOTFILES/myzsh-$OS_SPECIFIC.sh" ]] && source "$DOTFILES/myzsh-$OS_SPECIFIC.sh"
+
+# Local config
+[[ -s "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
