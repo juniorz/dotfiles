@@ -1,0 +1,12 @@
+[color]
+  ui = auto
+[core]
+  editor = vim
+  whitespace = tab-in-indent,tabwidth=2
+[alias]
+  st = status
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --cumulative --remotes
+  unstage = reset HEAD --
+[gui]
+  encoding = utf8

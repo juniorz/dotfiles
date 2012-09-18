@@ -1,0 +1,30 @@
+"
+" Bundles
+"
+
+" Misc
+Bundle 'L9'
+
+" Navegação
+Bundle 'FuzzyFinder'
+Bundle 'scrooloose/nerdtree'
+" Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'kien/ctrlp.vim'
+
+" Cosmetico
+" Bundle 'Lokaltog/vim-powerline'
+
+" Cores
+Bundle 'sjl/badwolf'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
+Bundle 'zaiste/Atom'
+
+" Util
+Bundle 'tpope/vim-fugitive'
+Bundle 'ervandew/supertab'
+Bundle 'vim-ruby/vim-ruby'
+
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
