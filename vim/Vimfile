@@ -11,6 +11,11 @@ Bundle 'scrooloose/nerdtree'
 " Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'kien/ctrlp.vim'
 
+Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/YankRing'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-abolish'
+
 " Cosmetico
 " Bundle 'Lokaltog/vim-powerline'
 
