@@ -1,11 +1,20 @@
 " set enc=utf-8
 set encoding=utf-8
 
+" Colors
 syntax on
+set t_Co=256
+set background=dark
 colorscheme molokai
 
+if has("gui_running")
+"  colorscheme molokai
+else
+"  colorscheme solarized
+"  colorscheme badwolf
+endif
+
 " Some stuff to get the mouse going in term
-" Mac Only???
 set mouse=a
 set ttymouse=xterm2
 
