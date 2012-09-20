@@ -42,11 +42,11 @@ set sidescroll=1
 set sidescrolloff=10
 
 " Folding
-set foldmethod=syntax
-set foldminlines=7
-set foldlevel=4
-set foldlevelstart=3
-set foldnestmax=5
+"set foldmethod=syntax
+"set foldminlines=7
+"set foldlevel=4
+"set foldlevelstart=3
+"set foldnestmax=5
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SPLITS
