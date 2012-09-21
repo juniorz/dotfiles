@@ -7,18 +7,14 @@ set t_Co=256
 set background=dark
 colorscheme molokai
 
-if has("gui_running")
-"  colorscheme molokai
-else
-"  colorscheme solarized
-"  colorscheme badwolf
-endif
-
 " Some stuff to get the mouse going in term
-set mouse=a
+" use mouse to navigate on insert and normal mode
+" and releases the mouse to the system on visual mode (can select)
+set mouse=in
 set ttymouse=xterm2
 
 set hidden " Automatically sets buffers as hidden (doesn alert when switching from unsaved buffers)
+set switchbuf=useopen
 set autoread
 set backspace=indent,eol,start
 set binary
@@ -27,12 +23,13 @@ set completeopt=longest,menuone,preview
 "set completeopt=menuone,preview
 set history=1000
 set incsearch
-set laststatus=2
 set list
+
+set laststatus=2
+:set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
 " Disable the macvim toolbar
 set guioptions-=T
-
 
 " text display
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
@@ -51,6 +48,15 @@ set foldlevel=3
 set foldlevelstart=2
 set foldnestmax=5
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SPLITS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set splitbelow
+set splitright
+" More room when maximizing a horizontal split 
+set winminheight=0
+
+
 " Trailing whitespace
 augroup trailing
   au!
@@ -60,6 +66,12 @@ augroup trailing
   au InsertLeave * :set listchars+=trail:⌴
 augroup END
 
+" Recover accidental close
+augroup saving_view
+  au!
+  " saves the visual is a recover file only if v:dying
+  :au VimLeave * if v:dying | echo "\nAAAAaaaarrrggghhhh!!!\n" | endif
+augroup END
 
 set notimeout
 set ttimeout
@@ -95,7 +107,7 @@ set autoindent
 set visualbell
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
 set wildmenu
-
+set wildmode=longest,list
 set dictionary=/usr/share/dict/words
 " }}}
 

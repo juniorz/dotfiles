@@ -16,6 +16,8 @@ Bundle 'vim-scripts/YankRing.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-abolish'
 
+Bundle 'vim-scripts/autosession.vim'
+
 " Cosmetico
 " Bundle 'Lokaltog/vim-powerline'
 
