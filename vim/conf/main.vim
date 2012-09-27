@@ -44,8 +44,8 @@ set sidescrolloff=10
 " Folding
 set foldmethod=syntax
 set foldminlines=7
-set foldlevel=3
-set foldlevelstart=2
+set foldlevel=4
+set foldlevelstart=3
 set foldnestmax=5
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
