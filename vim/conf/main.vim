@@ -53,7 +53,7 @@ set sidescrolloff=10
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set splitbelow
 set splitright
-" More room when maximizing a horizontal split 
+" More room when maximizing a horizontal split
 set winminheight=0
 
 
@@ -64,14 +64,16 @@ augroup trailing
   au InsertEnter * :set listchars-=trail:⌴
   au InsertLeave * :set listchars+=eol:¬
   au InsertLeave * :set listchars+=trail:⌴
+
+"  au VisualEnter * :set listchars-=eol:¬
+"  au VisualEnter * :set listchars-=trail:⌴
+"  au VisualLeave * :set listchars+=eol:¬
+"  au VisualLeave * :set listchars+=trail:⌴
 augroup END
 
-" Recover accidental close
-augroup saving_view
-  au!
-  " saves the visual is a recover file only if v:dying
-  :au VimLeave * if v:dying | echo "\nAAAAaaaarrrggghhhh!!!\n" | endif
-augroup END
+" auto save on focus lost
+"autocmd FocusLost * silent! wall
+"au FocusLost * :wa
 
 set notimeout
 set ttimeout
@@ -124,15 +126,13 @@ augroup END
 " }}}
 
 
-" . searching {{{
-
 " sane regexes
 nnoremap / /\v
 vnoremap / /\v
 
 set ignorecase
 set smartcase
-set showmatch
+set noshowmatch
 set gdefault
 set hlsearch
 
@@ -153,5 +153,12 @@ nnoremap g, g,zz
 " Open a Quickfix window for the last search.
 nnoremap <silent> <leader>? :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
 
-" }}}
-
+" " Delete trailing white space when saving
+" func! DeleteTrailingWS()
+"   exe "normal mz"
+"   %s/\s\+$//ge
+"   exe "normal `z"
+" endfunc
+"
+" au BufWrite * :call DeleteTrailingWS()
+"
