@@ -1,0 +1,13 @@
+# Global Rspec Configuration
+<%
+RSpec.configure {|c| c.formatter = 'documentation'}
+%>
+--order rand
+--colour
+--profile
+
+#--require pry
+#--require plymouth
+
+--require rspec/instafail
+--format RSpec::Instafail

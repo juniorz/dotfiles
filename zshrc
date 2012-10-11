@@ -16,6 +16,12 @@ ZSH_THEME="juniorz"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Iba related
+alias no-k7="no-k7-spec && no-k7-spinach"
+alias no-k7-spec="rm -rf spec/cassettes"
+alias no-k7-spinach="rm -rf features/cassettes"
+
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
