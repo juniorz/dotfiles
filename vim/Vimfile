@@ -8,17 +8,18 @@ Bundle 'L9'
 " Navegação
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
-" Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'kien/ctrlp.vim'
+" Bundle 'git://git.wincent.com/command-t.git'
 
+" Editing
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-endwise'
-" Bundle 'vim-scripts/YankRing.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-abolish'
 Bundle 'vim-scripts/Align'
 
-"Bundle 'vim-scripts/autosession.vim'
+" Bundle 'vim-scripts/YankRing.vim'
+" Bundle 'vim-scripts/autosession.vim'
 
 " Cosmetico
 " Bundle 'Lokaltog/vim-powerline'
@@ -32,9 +33,16 @@ Bundle 'zaiste/Atom'
 " Util
 Bundle 'tpope/vim-fugitive'
 Bundle 'ervandew/supertab'
+
+" Code
+Bundle 'tomtom/checksyntax_vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'bbommarito/vim-slim'
+
+Bundle 'rosenfeld/conque-term'
+" Bundle 'rson/vim-conque' "the same
+Bundle 'skwp/vim-ruby-conque'
 
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
