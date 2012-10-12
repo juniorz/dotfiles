@@ -16,12 +16,6 @@ ZSH_THEME="juniorz"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Iba related
-alias no-k7="no-k7-spec && no-k7-spinach"
-alias no-k7-spec="rm -rf spec/cassettes"
-alias no-k7-spinach="rm -rf features/cassettes"
-
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -40,7 +34,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundler osx rake rvm)
+plugins=(git brew bundler osx rake rvm iba)
 
 # Start!
 source $ZSH/oh-my-zsh.sh
@@ -53,5 +47,5 @@ OS_FAMILY=`uname -s`
 OS_SPECIFIC=$OS_FAMILY:l
 [[ -s "$DOTFILES/myzsh-$OS_SPECIFIC.sh" ]] && source "$DOTFILES/myzsh-$OS_SPECIFIC.sh"
 
-# Local config
+# Local config (and any sensitive data)
 [[ -s "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"

@@ -4,6 +4,7 @@ gem 'rails', '~> 3'
 
 gem 'rspec', '~> 2.10'
 gem 'rspec-instafail'
+gem 'socksify'
 
 gem 'pry'
 gem 'pry-doc'
