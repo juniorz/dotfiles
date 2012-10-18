@@ -39,6 +39,9 @@ plugins=(git brew bundler osx rake rvm iba)
 # Start!
 source $ZSH/oh-my-zsh.sh
 
+# no correction
+unsetopt correct_all
+
 # Any shell config
 [[ -s "$DOTFILES/shell" ]] && source "$DOTFILES/shell"
 
