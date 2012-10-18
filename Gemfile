@@ -17,3 +17,22 @@ gem 'plymouth' # opens pry on a failing test
 
 gem 'gist'
 gem 'github'
+
+gem 'zeus'
+
+gem 'guard'
+gem 'rb-fsevent', :require => false
+gem 'ruby_gntp'
+# gem 'growl'
+gem 'terminal-notifier-guard'
+
+gem 'guard-rspec'
+gem 'guard-spinach'
+gem 'guard-ctags-bundler'
+# gem 'guard-rack'
+# gem 'guard-shell'
+# gem 'guard-ego'
+# gem 'guard-zeus-client'
+# gem 'guard-zeus-client'
+# gem 'guard-jenkins'
+# What about a 'guard-go-server'?
