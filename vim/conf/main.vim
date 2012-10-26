@@ -10,7 +10,7 @@ colorscheme molokai
 " Some stuff to get the mouse going in term
 " use mouse to navigate on insert and normal mode
 " and releases the mouse to the system on visual mode (can select)
-set mouse=in
+set mouse=i
 set ttymouse=xterm2
 
 set hidden " Automatically sets buffers as hidden (doesn alert when switching from unsaved buffers)
@@ -32,7 +32,8 @@ set laststatus=2
 set guioptions-=T
 
 " text display
-set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+"set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+set listchars=tab:▸\ ,extends:❯,precedes:❮
 set textwidth=80
 set formatoptions=qrn1
 set colorcolumn=+1
@@ -60,9 +61,9 @@ set winminheight=0
 " Trailing whitespace
 augroup trailing
   au!
-  au InsertEnter * :set listchars-=eol:¬
+  "au InsertEnter * :set listchars-=eol:¬
   au InsertEnter * :set listchars-=trail:⌴
-  au InsertLeave * :set listchars+=eol:¬
+  "au InsertLeave * :set listchars+=eol:¬
   au InsertLeave * :set listchars+=trail:⌴
 
 "  au VisualEnter * :set listchars-=eol:¬

@@ -5,3 +5,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   source `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
+
+# Aliases
+alias tailf="tail -f"
+
