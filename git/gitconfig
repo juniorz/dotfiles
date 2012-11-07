@@ -4,10 +4,14 @@
   editor = vim
   whitespace = tab-in-indent,tabwidth=2
 [alias]
-  st = status
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --cumulative --remotes
-  unstage = reset HEAD --
   co = checkout
+  st = status
+  unstage = reset HEAD --
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  la = !git lg --all --cumulative --remotes || true
+  l = !git lg || true
+  r = !git lg -15 || true
+  ra = !git r --all || true
+  t = "!source ~/.dotfiles/git/githelpers && pretty_git_log"
 [gui]
   encoding = utf8
