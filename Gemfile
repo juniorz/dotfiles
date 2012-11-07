@@ -1,5 +1,24 @@
 source :rubygems
 
+# gem 'bundler'
+gem 'rake'
+gem 'rvm'
+gem 'rubygems-bundler'
+gem 'socksify'
+
+# Performance
+gem 'ruby-prof'
+gem 'perftools.rb'
+gem 'rack-perftools_profiler'
+
+# Misc
+# They are fixing problems related to lastest qt (4.8)
+# https://github.com/thoughtbot/capybara-webkit/issues/399
+# Maybe I should try uninstall 4.8 and use a previous version
+gem 'capybara-webkit', github: 'thoughtbot/capybara-webkit'
+gem 'terminal-notifier'
+
+# Rails
 gem 'rails', '~> 3'
 
 gem 'rspec', '~> 2.10'
